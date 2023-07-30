@@ -1,0 +1,15 @@
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  .logo{
+    display: flex;
+    align-items: center;
+  }
+  .user-info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}

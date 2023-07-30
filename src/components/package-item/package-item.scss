@@ -1,0 +1,55 @@
+.package-item {
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #f2f2f2;
+  display: flex;
+  border: solid 2px transparent;
+  cursor: pointer;
+  &:hover {
+    background-color: #eee;
+    border-color: #999;
+  }
+  &.selected {
+    border: solid 2px rgb(84, 180, 53);
+    background-color: rgb(84, 180, 53, 0.1);
+  }
+  .img {
+    flex-basis: 140px;
+    background-color: #999;
+    overflow: hidden;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      object-fit: cover;
+    }
+  }
+  .info {
+    padding: 15px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    .top {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: 120%;
+      font-weight: bold;
+    }
+    .details {
+      .badge {
+        margin-right: 10px;
+      }
+      margin: 10px 0;
+    }
+    .tags {
+      border-top: solid 1px #ddd;
+      padding-top: 10px;
+    }
+  }
+}

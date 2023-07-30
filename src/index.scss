@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #e9e9e9;
+}
+
+/*LAYOUT STYLES***********************************/
+/*************************************************/
+/*Main layout*/
+.main-layout {
+  background-color: transparent;
+  .header {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  }
+
+  .content {
+    margin-top: 64px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    .page-container {
+      width: 1200px;
+      max-width: 100%;
+    }
+  }
+
+  .footer {
+    text-align: center;
+    background-color: transparent;
+  }
+}
+
+/*login style*/
+.login-layout {
+  background-color: transparent;
+  position: absolute;
+  padding: 20px;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+/*PAGE STYLES*************************************/
+/*************************************************/
+/*login page*/
+.login-page {
+  width: 400px;
+  max-width: 100%;
+}
+
+/*packages page*/
+.packages-page {
+  .footer {
+    margin-top: 30px;
+    border-top: solid 1px #DDD;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    .total-price{
+      font-size: 130%;
+
+    }
+  }
+}
+
+/*result page*/
+.result-page {
+  display: flex;
+  justify-content: center;
+}

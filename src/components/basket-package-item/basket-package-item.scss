@@ -1,0 +1,14 @@
+.basket-package-item {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+  .name, .price{
+    font-weight: bold;
+    font-size: 120%;
+  }
+}
